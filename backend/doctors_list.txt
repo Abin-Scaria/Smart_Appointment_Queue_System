@@ -1,0 +1,21 @@
+========== CURRENT DOCTORS IN DATABASE ==========
+- Dr. Anil Kumar
+  Username: dr_anilkumar
+  City: Kochi
+  Specialization: Cardiology
+-------------------------------------------------
+- Dr. Priya Menon
+  Username: dr_priyamenon
+  City: Kochi
+  Specialization: Pediatrics
+-------------------------------------------------
+- Dr. Renjith Pillai
+  Username: dr_renjithpillai
+  City: Kochi
+  Specialization: Dermatology
+-------------------------------------------------
+- Dr. user3 
+  Username: user3
+  City: Kochi
+  Specialization: Ophthalmology
+-------------------------------------------------
