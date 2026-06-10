@@ -1,0 +1,195 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "patientdemo",
+      "email": "patient@careaxis.app",
+      "passwordHash": "11d1e1d4d5761d964d08ede9e738db5e:4da740c84bc0a21200f9d573eebbcd5c385d2c3be466681a1281922bb50904e53f6d948afb1c38f2deedb3970952f33b51e18ac2b1bb176a95b807d45de9c51f",
+      "role": "PATIENT",
+      "first_name": "Aarav",
+      "last_name": "Menon",
+      "phone_number": "+919876543210"
+    },
+    {
+      "id": 2,
+      "username": "doctorvera",
+      "email": "vera@careaxis.app",
+      "passwordHash": "05ba300e27d3f6b8b0b7024229839855:a75e4625a1f6ef56dee1b8431ca61ba31706f8e6a77ffe99accd9e649ae0a7e97b2df40650e68bc8b254d571a7a165106ce7ba79205ca5c79ffbdc54f4991b96",
+      "role": "DOCTOR",
+      "first_name": "Vera",
+      "last_name": "Nair",
+      "phone_number": "+919999111222"
+    },
+    {
+      "id": 3,
+      "username": "doctorarjun",
+      "email": "arjun@careaxis.app",
+      "passwordHash": "f8beb355047800360775be5c1b8762c2:788911e0d5cc1ac9aff1bb7b2e8f7f2b785b87d9f37b3930346b35c0ecd30faa04537c88571514d894520950aa929a9db484227a840ea3e836f96816794db230",
+      "role": "DOCTOR",
+      "first_name": "Arjun",
+      "last_name": "Rao",
+      "phone_number": "+919888111222"
+    },
+    {
+      "id": 4,
+      "username": "doctorfathima",
+      "email": "fathima@careaxis.app",
+      "passwordHash": "84101ab1a52bb1091a3af19fbeb38921:cb42119908e0f12a6f7444d0a0d24beb63c0ad408ce35c7c222a9275387b43437cda396fdcf5bcb8f5ee40c945b6dd32d24a969370c42f7a260aa1bed1126087",
+      "role": "DOCTOR",
+      "first_name": "Fathima",
+      "last_name": "Latheef",
+      "phone_number": "+919777111222"
+    }
+  ],
+  "patientProfiles": [
+    {
+      "id": 1,
+      "userId": 1,
+      "medical_history": "Seasonal allergies. Mild asthma noted in previous visits."
+    }
+  ],
+  "doctorProfiles": [
+    {
+      "id": 1,
+      "userId": 2,
+      "specialization": "Cardiology",
+      "experience_years": 14,
+      "clinic_address": "Lakeside Medical Chambers, Panampilly Nagar",
+      "city": "Kochi",
+      "area": "Panampilly Nagar",
+      "pincode": "682036",
+      "consultation_fee": 900,
+      "languages": "English, Malayalam, Hindi",
+      "max_patients_per_day": 18,
+      "is_verified": true
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "specialization": "Paediatrics",
+      "experience_years": 11,
+      "clinic_address": "Palm Grove Family Clinic, Indiranagar",
+      "city": "Bengaluru",
+      "area": "Indiranagar",
+      "pincode": "560038",
+      "consultation_fee": 750,
+      "languages": "English, Kannada, Hindi",
+      "max_patients_per_day": 22,
+      "is_verified": true
+    },
+    {
+      "id": 3,
+      "userId": 4,
+      "specialization": "Dermatology",
+      "experience_years": 9,
+      "clinic_address": "Harbour Skin and Wellness, Kakkanad",
+      "city": "Kochi",
+      "area": "Kakkanad",
+      "pincode": "682030",
+      "consultation_fee": 850,
+      "languages": "English, Malayalam, Tamil",
+      "max_patients_per_day": 16,
+      "is_verified": false
+    }
+  ],
+  "clinicTimings": [
+    {
+      "id": 1,
+      "doctorId": 1,
+      "start_time": "17:30:00",
+      "end_time": "20:30:00",
+      "slot_duration_mins": 15
+    },
+    {
+      "id": 2,
+      "doctorId": 2,
+      "start_time": "17:00:00",
+      "end_time": "20:00:00",
+      "slot_duration_mins": 15
+    },
+    {
+      "id": 3,
+      "doctorId": 3,
+      "start_time": "18:00:00",
+      "end_time": "21:00:00",
+      "slot_duration_mins": 20
+    }
+  ],
+  "appointments": [
+    {
+      "id": 1,
+      "patientId": 1,
+      "doctorId": 1,
+      "date": "2026-05-30",
+      "slot_time": "18:00:00",
+      "status": "COMPLETED",
+      "reason_for_visit": "Chest discomfort during evening walks.",
+      "queue_number": 2,
+      "payment_status": true,
+      "razorpay_order_id": "ORDER_SEEDED_1",
+      "created_at": "2026-05-28T16:10:00.000Z"
+    },
+    {
+      "id": 2,
+      "patientId": 1,
+      "doctorId": 2,
+      "date": "2026-06-02",
+      "slot_time": "17:30:00",
+      "status": "CONFIRMED",
+      "reason_for_visit": "Review for recurrent cold symptoms.",
+      "queue_number": 1,
+      "payment_status": true,
+      "razorpay_order_id": "ORDER_SEEDED_2",
+      "created_at": "2026-05-29T09:20:00.000Z"
+    }
+  ],
+  "prescriptions": [
+    {
+      "id": 1,
+      "appointmentId": 1,
+      "medicines": "Paracetamol 500mg - 1 tablet after food for 3 days",
+      "notes": "Stay hydrated and avoid strenuous activity for the next 48 hours.",
+      "created_at": "2026-05-30T13:00:00.000Z"
+    }
+  ],
+  "enquiries": [
+    {
+      "id": 1,
+      "appointmentId": 1,
+      "senderId": 1,
+      "message": "Can I take the medicine after dinner instead of lunch?",
+      "response": "Yes, after dinner is acceptable as long as you take it after food.",
+      "created_at": "2026-05-30T15:30:00.000Z"
+    },
+    {
+      "id": 2,
+      "appointmentId": 2,
+      "senderId": 1,
+      "message": "Do I need to bring the child vaccination book for the review?",
+      "response": "",
+      "created_at": "2026-05-30T16:00:00.000Z"
+    }
+  ],
+  "ratings": [
+    {
+      "id": 1,
+      "doctorId": 1,
+      "patientId": 1,
+      "score": 5,
+      "review": "Very clear explanation and a calm evening consultation experience.",
+      "created_at": "2026-05-30T18:30:00.000Z"
+    },
+    {
+      "id": 2,
+      "doctorId": 2,
+      "patientId": 1,
+      "score": 4,
+      "review": "Good paediatric guidance and smooth follow-up process.",
+      "created_at": "2026-05-29T18:30:00.000Z"
+    }
+  ],
+  "meta": {
+    "createdAt": "2026-05-30T05:46:55.511Z",
+    "updatedAt": "2026-05-30T05:46:55.511Z"
+  }
+}
